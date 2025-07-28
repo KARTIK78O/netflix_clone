@@ -459,7 +459,9 @@ h1 {
 }
 
 /*<!==================================  [[ Responsive Design ]]  ==============================>*/
-
+/* 
+  "Layout responsiveness" :- 
+*/
 /* ==============================================================================
    Responsive Design: Large Screens (900px - 1525px)
    ============================================================================== */
@@ -563,5 +565,118 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .crouselCardbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    place-items: center; /* centers both horizontally & vertically */
+    gap: 1rem;
+  }
+}
+
+/* ==========================================================================|
+/* ==========================================================================|
+   TEXT Responsiveness: Base Styles
+   ==========================================================================|
+   ========================================================================== */
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+.btn,
+input,
+select,
+a {
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Large Screens (1025px and above)
+   ========================================================================== */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p,
+  span {
+    font-size: 1.125rem;
+  }
+}
+
+/* ==========================================================================
+   Medium Screens (768px to 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p,
+  span,
+  .btn,
+  input,
+  select {
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================================================
+   Small Screens (below 768px)
+   ========================================================================== */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  p,
+  span,
+  .btn,
+  input,
+  select {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .hero .content > div,
+  .input_Button {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .faq-question {
+    flex-direction: row;
+    gap: 0.5rem;
+    text-align: center;
   }
 }
