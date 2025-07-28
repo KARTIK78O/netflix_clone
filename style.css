@@ -26,6 +26,7 @@ body {
 .box {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 /* -- Bg-Image Styling -- */
