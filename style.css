@@ -26,6 +26,7 @@ body {
 /* -- Bg-Image Styling -- */
 
 .netflix-bg {
+  overflow: hidden;
   background-image: url("Assets/Netflix-Bg.jpg");
   background-size: cover;
   background-position: center;
