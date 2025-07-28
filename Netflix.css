@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+.main_content {
+  width: 80%;
+  margin: 0rem auto;
+  margin-top: 3rem;
+}
+
+/* ----------------------------------- Landing Page Styling  ---------------------------------------- */
+
+/* .box styling */
+
+.box {
+  height: 100%;
+  width: 100%;
+}
+
+/* -- Bg-Image Styling -- */
+
+.netflix-bg {
+  background-image: url("Assets/Netflix-Bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* inside box nav styling  */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80vw;
+  max-height: auto;
+  margin: auto;
+  position: absolute; /* parent ke hisab se styling postioning karega --> ".main .box " */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Netflix logo  */
+
+.main nav img {
+  width: 10vw;
+  height: 12vh;
+  z-index: 1;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* content inside the bg-img Section  */
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.span_1 {
+  position: relative;
+  font-weight: 800;
+  font-size: 53px;
+  letter-spacing: 0px;
+  line-height: 70px;
+}
+.span_2 {
+  font-weight: 800;
+  font-size: 53px;
+  letter-spacing: 0px;
+}
+
+.span_3 {
+  font-weight: 500;
+  font-size: 19px;
+
+  line-height: 50px;
+}
+.span_4 {
+  /* display: inline-block; */
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+/* All buttons styling - nav and input btn */
+
+.btn {
+  font-weight: 500;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* nav button styling  */
+
+.nav-btn-red {
+  background-color: red;
+  border: none;
+  color: white;
+  width: 5rem;
+  padding: 7px 0px;
+  cursor: pointer;
+}
+
+.nav-lang-btn {
+  background-color: rgb(23, 23, 23, 0.7);
+  padding: 6px 10px 6px 15px;
+  color: #fff;
+  border: 1px solid rgb(161, 155, 155, 0.5);
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* btn after input Styling  */
+
+.input-btn-red {
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  padding: 7px 20px 11px 20px;
+  height: 4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.input {
+  padding: 20px 20px 20px 20px;
+  width: 22rem;
+  overflow: hidden;
+  margin-right: 5px;
+  border: 1px solid rgb(161, 155, 155, 0.5);
+  border-radius: 4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgb(23, 23, 23, 0.7);
+}
+
+input::placeholder {
+  color: white;
+}
+
+/*<!--------------------------------------------------------------------------------------------------------->*/
+/*<!-------------------------------------------------------------------------------------------------------->*/
+/*------------------------------ Trending Now With Cards Styling -------------------------------------------*/
+
+.netflix-line-effect {
+  width: 100%;
+  height: 9px;
+  background: radial-gradient(
+    ellipse at center,
+    #e50914 0%,
+    #e50914 40%,
+    #b00617 60%,
+    #000000 100%
+  );
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  overflow: hidden;
+}
+
+.crouselcardcontainer {
+  width: 80%;
+}
+
+.crouselsection {
+  height: 100%;
+  width: 100vw;
+  /* position: relative; */
+}
+
+/* Trending Now Title */
+.crouselsection h2 {
+  width: 80%;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+/* Individual Card */
+.crouselCardbox {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+/* Card Image */
+.crouselImageContainer img {
+  border-radius: 1rem;
+  height: 13.75rem;
+  width: 10rem;
+
+  cursor: pointer;
+}
+
+.crouselImageContainer {
+  transition: all 0.2s 0s ease;
+}
+
+.crouselImageContainer:hover {
+  transform: scale(1.1);
+}
+
+/*<!--------------------------------------------------------------------------------------------------------->*/
+/*<!-------------------------------------------------------------------------------------------------------->*/
+/*------------------------------ More reasons to join ------------------------------------------------------*/
+
+.reasons-section {
+  width: 100vw;
+  margin: 1.5rem 0rem;
+}
+
+.section-h2 {
+  width: 80%;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.reasons-grid {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reason-card {
+  background-color: #231044;
+  background-image: radial-gradient(
+    circle at 90% 90%,
+    rgba(84, 47, 168, 0.438),
+    transparent 45%
+  );
+  border-radius: 0.75rem;
+  padding: 1rem;
+  height: 13.75rem;
+  width: 16.25rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  color: #e2e8f0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.card-content p {
+  color: #e2e8f0;
+}
+
+.card-icon-wrapper img {
+  border-radius: 8px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*------------------------------ FAQ -Frequently Asked Questions------------------------------------------*/
+
+h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 2.5rem 0rem 0.8rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  background-color: #303030;
+}
+
+.faq-item .faq-question:hover {
+  background-color: #474646;
+}
+
+.faq-question {
+  color: #ffffff;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+/* Answer Panel Styling */
+.faq-answer-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s ease;
+  transition: padding 0.4s ease;
+  padding: 0 3rem 0 1.5rem; /* vertical padding 0, side padding same */
+  border-top: 2px solid #000;
+}
+
+.faq-item.active .faq-answer-content {
+  max-height: 1000px;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.faq-answer-content p {
+  color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/*<!--------------------------------------------------------------------------------------------------> */
+/*<!--------------------------------------------------------------------------------------------------> */
+/*<!-------------------------------------- [ Second-GET-Started ] ------------------------------------> */
+
+.Second_get_Started {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.span_5 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+/*<!============================================= [[ Footer ]] ========================================>*/
+
+.site-footer {
+  /* background-color: #000; */
+  color: #808080; /* Grey text color */
+  padding: 4rem 2rem;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto; /* Content ko center mein laane ke liye */
+}
+
+.footer-contact {
+  margin: 0 0 2rem 0;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Links ke liye Grid Layout */
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.footer-links-grid li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.875rem; /* 14px */
+}
+
+.footer-links-grid li {
+  text-decoration: underline;
+}
+
+/* Language Selector Button */
+
+.language-selector button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #333;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.language-selector .arrow {
+  font-size: 0.6rem;
+}
+
+.footer-brand {
+  margin: 2rem 0;
+}
+
+.footer-recaptcha {
+  font-size: 0.75rem; /* Chhota text */
+  color: #555;
+}
+.footer-recaptcha a {
+  color: inherit;
+}
+
+/*<!==================================  [[ Responsive Design ]]  ==============================>*/
+
+/* ==============================================================================
+   Responsive Design: Large Screens (900px - 1525px)
+   ============================================================================== */
+@media (min-width: 900px) and (max-width: 1525px) {
+  .reasons-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reason-card {
+    width: auto;
+    margin: 1rem;
+  }
+
+  .crouselCardbox img {
+    width: 8rem;
+    height: 11rem;
+  }
+}
+
+/* ==============================================================================
+   Responsive Design: Medium Screens (up to 1024px)
+   ============================================================================== */
+@media (max-width: 1024px) {
+  .crouselCardbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    place-items: center; /* centers both horizontally & vertically */
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+  .crouselCardbox img {
+    width: 9.5rem;
+    height: 11rem;
+  }
+}
+
+/* ==============================================================================
+   Responsive Design: Tablets and Small Laptops (up to 900px)
+   ============================================================================== */
+@media (max-width: 900px) {
+  .reasons-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reason-card {
+    margin: 0.5rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ==============================================================================
+   Footer & Second Get Started (Mobile: up to 800px)
+   ============================================================================== */
+@media (max-width: 800px) {
+  .footer-container {
+    padding: 1rem;
+  }
+
+  .footer-contact {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* changed from 4/5 columns to 2 */
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .footer-links-grid li {
+    margin: 5px 0;
+  }
+
+  .language-selector {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .footer-brand,
+  .footer-recaptcha {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+
+  /* Second Get Started Section */
+  .input_Button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
