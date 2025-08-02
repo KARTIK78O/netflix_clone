@@ -651,13 +651,6 @@ h1 {
   .input-btn-red_1{
     margin: 1rem 0rem 0.3rem 0rem;
   }
-  .content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   .crouselImageContainer img {
     border-radius: 1rem;
