@@ -17,23 +17,23 @@ body {
   width: 80%;
   margin: 0rem auto;
   margin-top: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
 /* ----------------------------------- Landing Page Styling  ---------------------------------------- */
 
-/* .box styling */
-
 /* -- Bg-Image Styling -- */
 
 .netflix-bg {
-  overflow: hidden;
   background-image: url("Assets/Netflix-Bg.jpg");
   background-size: cover;
   background-position: center;
-  background-size: max(1200px, 100vw);
+  background-size: max(1300px, auto);
   background-repeat: no-repeat;
   opacity: 0.3;
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   height: 100%;
@@ -55,7 +55,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 99;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -64,8 +64,9 @@ body {
 
 .main nav img {
   width: 10vw;
-  height: 12vh;
+  position: relative;
   z-index: 1;
+  border: 2px solid white;
 }
 
 .hero {
@@ -74,7 +75,7 @@ body {
   font-style: normal;
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -147,7 +148,17 @@ body {
   border: 1px solid rgb(161, 155, 155, 0.5);
   border-radius: 4px;
   margin-right: 10px;
+}
+.nav-lang-btn,
+.nav-btn-red,
+.input-btn-red {
   cursor: pointer;
+}
+
+.nav-lang-btn,
+.nav-btn-red {
+  position: relative;
+  z-index: 99;
 }
 
 /* btn after input Styling  */
@@ -157,9 +168,8 @@ body {
   color: white;
   font-size: 24px;
   padding: 0px 20px;
-  height: 4rem;
+  height: 3.81rem;
   font-weight: 400;
-  cursor: pointer;
 }
 
 .input {
@@ -490,6 +500,9 @@ h1 {
     margin: 0 auto;
     gap: 1rem;
   }
+  .nav{
+
+  }
 
   .crouselCardbox img {
     width: 9.5rem;
@@ -617,7 +630,7 @@ a {
 }
 
 /* ==========================================================================
-   Medium Screens (768px to 1024px)
+   Medium Screens (Below 1024px)
    ========================================================================== */
 @media (max-width: 1024px) {
   h1 {
@@ -674,5 +687,38 @@ a {
     flex-direction: row;
     gap: 0.5rem;
     text-align: center;
+  }
+}
+
+/* ==========================================================================
+   Extra - Small Screens (below 600px)
+   ========================================================================== */
+
+@media (max-width: 630px) {
+  .span_4 {
+    font-size: 1rem;
+  }
+  .span_1,
+  .span_2 {
+    font-size: 40px;
+  }
+  .input {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 384px) {
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .crouselImageContainer img {
+    border-radius: 1rem;
+    height: 10rem;
+    width: 8rem;
   }
 }
