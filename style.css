@@ -46,16 +46,14 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 80vw;
-  min-height: 10vh;
-  margin: auto;
-  position: absolute; /* parent ke hisab se styling postioning karega --> ".main .box " */
+  justify-content: space-between;
+  margin: 0rem auto;
+  width: 80%;
+  position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 99;
+  left: 0;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -63,13 +61,10 @@ body {
 /* Netflix logo  */
 
 .main nav img {
-  width: 10vw;
+  width: 8rem; /* Fixed width better for logo */
   height: auto;
-  min-height: 70px;
-  min-width: 8vw;
-  position: relative;
-  z-index: 1;
-  object-fit: contain;
+  object-fit: cover;
+  display: block;
 }
 
 .hero {
@@ -94,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 .span_1 {
@@ -528,7 +523,7 @@ h1 {
   }
 
   .main nav img {
-    transform: scale(1.5);
+    width: 150px;
   }
 
   .crouselCardbox img {
@@ -603,7 +598,7 @@ h1 {
   }
 
   .main nav img {
-    transform: scale(1.8);
+    width: 170px;
   }
 }
 
@@ -628,17 +623,17 @@ h1 {
     width: 15rem;
   }
 
-    .main nav img {
-    transform: scale(2);
+  .main nav img {
+    width: 190px;
   }
 }
 
 /* ==============================================================================
    Responsive Design: Very Small Screens (below 500px)
    ============================================================================== */
-@media (max-width: 500px)  {
-    .main nav img {
-    transform: scale(2.3);
+@media (max-width: 500px) {
+  .main nav img {
+    width: 150px;
   }
 }
 /* ==============================================================================
@@ -648,7 +643,7 @@ h1 {
   .faq-question {
     padding: 1.5rem 0.5rem;
   }
-  .input-btn-red_1{
+  .input-btn-red_1 {
     margin: 1rem 0rem 0.3rem 0rem;
   }
 
@@ -659,29 +654,36 @@ h1 {
   }
 }
 
+@media (max-width: 450px) {
+  .main nav img {
+    width: 100px;
+  }
+}
+
 /* ==========================================================================|*/
 /* ==========================================================================|*/
 /* =======================  TEXT Responsiveness ============================= */
 /* ==========================================================================|*/
 /* ==========================================================================|*/
+@media (max-width: 384px) {
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+    font-weight: bold;
+  }
 
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-  font-weight: bold;
-}
-
-h1,
-h2,
-h3,
-p,
-span,
-.btn,
-input,
-select,
-a {
-  font-size: 1rem;
+  h1,
+  h2,
+  h3,
+  p,
+  span,
+  .btn,
+  input,
+  select,
+  a {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1025px) {
