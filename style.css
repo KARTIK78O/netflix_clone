@@ -64,9 +64,11 @@ body {
 
 .main nav img {
   width: 10vw;
+  height: auto;
+  max-height: 70px;
   position: relative;
   z-index: 1;
-  border: 2px solid white;
+  object-fit: contain;
 }
 
 .hero {
@@ -468,6 +470,7 @@ h1 {
 /* 
   "Layout responsiveness" :- 
 */
+
 /* ==============================================================================
    Responsive Design: Large Screens (900px - 1525px)
    ============================================================================== */
@@ -495,18 +498,22 @@ h1 {
 @media (max-width: 1024px) {
   .crouselCardbox {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    place-items: center; /* centers both horizontally & vertically */
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
     margin: 0 auto;
     gap: 1rem;
-  }
-  .nav{
-
   }
 
   .crouselCardbox img {
     width: 9.5rem;
     height: 11rem;
+  }
+
+  .nav-btn-red,
+  .nav-lang-btn,
+  .main nav img {
+    width: 12vw;
+    max-height: 60px;
   }
 }
 
@@ -543,7 +550,7 @@ h1 {
 
   .footer-links-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* changed from 4/5 columns to 2 */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 0;
     list-style: none;
@@ -567,7 +574,6 @@ h1 {
     margin-top: 1rem;
   }
 
-  /* Second Get Started Section */
   .input_Button {
     display: flex;
     flex-direction: column;
@@ -577,20 +583,74 @@ h1 {
   }
 }
 
+/* ==============================================================================
+   Responsive Design: Smaller Devices (below 630px)
+   ============================================================================== */
 @media (max-width: 630px) {
   .crouselCardbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columns */
-    place-items: center; /* centers both horizontally & vertically */
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .span_4 {
+    font-size: 1rem;
+  }
+
+  .span_1,
+  .span_2 {
+    font-size: 40px;
+  }
+
+  .input {
+    width: 15rem;
   }
 }
 
-/* ==========================================================================|
-/* ==========================================================================|
-   TEXT Responsiveness: Base Styles
-   ==========================================================================|
-   ========================================================================== */
+/* ==============================================================================
+   Responsive Design: Very Small Screens (below 480px)
+   ============================================================================== */
+@media (max-width: 480px) {
+  .nav-btn-red,
+  .nav-lang-btn,
+  .main nav img {
+    width: 24vw;
+    max-height: 45px;
+  }
+}
+
+/* ==============================================================================
+   Responsive Design: Extra Small Screens (below 384px)
+   ============================================================================== */
+@media (max-width: 384px) {
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .crouselImageContainer img {
+    border-radius: 1rem;
+    height: 10rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-btn-red,
+  .nav-lang-btn,
+  .main nav img {
+    width: 28vw;
+    max-height: 40px;
+  }
+}
+
+/* ==========================================================================|*/
+/* ==========================================================================|*/
+/* =======================  TEXT Responsiveness ============================= */
+/* ==========================================================================|*/
+/* ==========================================================================|*/
+
 h1,
 h2,
 h3 {
@@ -610,9 +670,6 @@ a {
   font-size: 1rem;
 }
 
-/* ==========================================================================
-   Large Screens (1025px and above)
-   ========================================================================== */
 @media (min-width: 1025px) {
   h1 {
     font-size: 2.5rem;
@@ -629,9 +686,6 @@ a {
   }
 }
 
-/* ==========================================================================
-   Medium Screens (Below 1024px)
-   ========================================================================== */
 @media (max-width: 1024px) {
   h1 {
     font-size: 2rem;
@@ -651,9 +705,6 @@ a {
   }
 }
 
-/* ==========================================================================
-   Small Screens (below 768px)
-   ========================================================================== */
 @media (max-width: 767px) {
   h1 {
     font-size: 1.6rem;
@@ -687,38 +738,5 @@ a {
     flex-direction: row;
     gap: 0.5rem;
     text-align: center;
-  }
-}
-
-/* ==========================================================================
-   Extra - Small Screens (below 600px)
-   ========================================================================== */
-
-@media (max-width: 630px) {
-  .span_4 {
-    font-size: 1rem;
-  }
-  .span_1,
-  .span_2 {
-    font-size: 40px;
-  }
-  .input {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 384px) {
-  .content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .crouselImageContainer img {
-    border-radius: 1rem;
-    height: 10rem;
-    width: 8rem;
   }
 }
