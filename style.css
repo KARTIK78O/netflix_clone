@@ -597,8 +597,8 @@ h1 {
     gap: 1rem;
   }
 
-  .main nav img {
-    width: 170px;
+  .main .nav img {
+    width: 150px;
   }
 }
 
@@ -637,7 +637,7 @@ h1 {
   }
 }
 /* ==============================================================================
-   Responsive Design: Extra Small Screens (below 384px)
+   Responsive Design: Extra Small Screens (below 430px)
    ============================================================================== */
 @media (max-width: 430px) {
   .faq-question {
@@ -655,8 +655,13 @@ h1 {
 }
 
 @media (max-width: 450px) {
-  .main nav img {
+  .main .nav img {
     width: 100px;
+  }
+
+  .nav {
+    width: 95%;
+    margin: 0.5rem auto;
   }
 }
 
