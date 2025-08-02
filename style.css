@@ -615,12 +615,17 @@ h1 {
     width: 24vw;
     max-height: 45px;
   }
+
+
 }
 
 /* ==============================================================================
    Responsive Design: Extra Small Screens (below 384px)
    ============================================================================== */
 @media (max-width: 384px) {
+  .faq-question{
+    padding: 1.5rem 0.5rem;
+  }
   .content {
     text-align: center;
     display: flex;
