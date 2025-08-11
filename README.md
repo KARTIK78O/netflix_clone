@@ -23,6 +23,6 @@
 
 ## 🚀 Live Demo:
 
-[Click_Me](https://netfliix-clone-4hrve8xf4-kartik78os-projects.vercel.app)
+[Click_Me](Ntfliix-clone-omega.vercel.app)
 
 ---
