@@ -1,1 +1,29 @@
-[Click_Me](https://netfliix-clone-4hrve8xf4-kartik78os-projects.vercel.app)
+# 🎬 Netflix Homepage Clone
+
+> A fully responsive front-end clone of Netflix's homepage created using HTML & CSS.  
+> Perfect for practicing layout, positioning, responsiveness, and modern UI design.
+
+---
+
+## 📌 Features:
+
+- ✅ Pixel-perfect layout inspired by Netflix
+- ✅ Responsive design for all screen sizes (Mobile, Tablet, Desktop)
+- ✅ Modern UI elements like navbar, hero section, and footer
+- ✅ Clean and organized code
+
+---
+
+## 🛠️ Built With:
+
+- HTML5  
+- CSS3 (Flexbox + Grid + Media Queries)
+
+---
+
+## 🚀 Live Demo:
+
+[Netflix Clone](https://ntfliix-clone-omega.vercel.app)
+
+
+---
